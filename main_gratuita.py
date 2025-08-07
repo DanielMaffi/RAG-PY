@@ -24,7 +24,6 @@ com base nessas informações abaixo:
 def perguntar():
     pergunta = input("Digite sua pergunta: ")
 
-    # Embeddings gratuitos
     funcao_embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     db = Chroma(
         persist_directory=CAMINHO_DB,
@@ -44,7 +43,6 @@ def perguntar():
         "base_conhecimento": base_conhecimento
     }).to_string()
 
-    # Modelo local gratuito (usa HuggingFace Hub)
     llm = pipeline("text-generation", model="mistralai/Mistral-7B-Instruct-v0.1", max_new_tokens=500)
     resposta = llm(prompt)[0]["generated_text"]
 

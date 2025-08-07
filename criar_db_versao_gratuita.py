@@ -42,5 +42,4 @@ def vetorizar_chunks(chunks):
     )
     print(f"Banco de dados criado com {len(chunks)} chunks.")
 
-if __name__ == "__main__":
-    Criar_db()
+Criar_db()
