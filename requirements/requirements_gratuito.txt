@@ -1,0 +1,12 @@
+python-dotenv
+langchain
+langchain-community
+langchain-chroma
+chromadb
+pypdf
+sentence-transformers
+transformers
+accelerate
+torch
+safetensors
+langchain-huggingface
